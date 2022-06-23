@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "cross-env PORT=7100 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.9",
+    "cross-env": "^7.0.3",
     "pinia": "^2.0.14",
     "qiankun": "^2.7.3"
   }
