@@ -11,11 +11,11 @@ export const useStore = defineStore('main', {
         return {
             // all these properties will have their type inferred automatically
             apps: [
-                {
-                    name: 'nuxt-about',
-                    activeRule: '/about',
-                    entry: 'http://localhost:7101/',
-                },
+                // {
+                //     name: 'nuxt-about',
+                //     activeRule: '/about',
+                //     entry: 'http://localhost:7101/',
+                // },
                 {
                     name: 'nuxt-landing',
                     activeRule: '/landing',
