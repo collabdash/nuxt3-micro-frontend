@@ -4,6 +4,11 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
     modules: [
         '@femessage/nuxt-micro-frontend',
+        [
+            '@nuxtjs/router',
+            // 
+            { keepDefaultRouter: true, path: './router', fileName: 'index.js' }
+        ]
     ],
     MFE: {
         force: true

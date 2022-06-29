@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@femessage/nuxt-micro-frontend": "^1.7.0",
+    "@nuxtjs/router": "^1.7.0",
     "env-cmd": "^10.1.0",
     "nuxt": "3.0.0-rc.4"
   }
