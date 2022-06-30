@@ -2,11 +2,17 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "env-cmd nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.4"
+    "nuxt": "3.0.0-rc.4",
+    "env-cmd": "^10.1.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.1.9",
+    "pinia": "^2.0.14",
+    "qiankun": "^2.7.3"
   }
 }

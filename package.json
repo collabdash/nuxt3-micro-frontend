@@ -1,0 +1,27 @@
+{
+  "name": "nuxt3-micro-frontend",
+  "version": "1.0.0",
+  "description": "nuxt3 micro-frontend proof of concept",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "concurrently \"yarn install:main-app\"  \"yarn install:landing\"",
+    "install:main-app": "cd app && yarn",
+    "install:landing": "cd landing-page && yarn",
+    "serve:all": "concurrently \"yarn serve:main-app\" \"yarn serve:landing\"",
+    "serve:main-app": "cd app && yarn dev",
+    "serve:landing": "cd landing && yarn dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eulier1/nuxt3-micro-frontend.git"
+  },
+  "author": "Eulier Gonzalez",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/eulier1/nuxt3-micro-frontend/issues"
+  },
+  "homepage": "https://github.com/eulier1/nuxt3-micro-frontend#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

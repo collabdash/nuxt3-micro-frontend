@@ -1,12 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "env-cmd nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@femessage/nuxt-micro-frontend": "^1.7.0",
+    "@nuxtjs/router": "^1.7.0",
+    "env-cmd": "^10.1.0",
     "nuxt": "3.0.0-rc.4"
   }
 }
