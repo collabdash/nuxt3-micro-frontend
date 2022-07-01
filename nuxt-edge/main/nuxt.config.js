@@ -1,3 +1,6 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
 import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
@@ -39,4 +42,17 @@ export default defineNuxtConfig({
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // Nuxt hook
+  hooks: {
+    // running nuxi build command, throws an Rollup error 
+    // this is a fix https://github.com/nuxt/bridge/issues/27
+    'build:done': (builder) => {
+      const extraFilePath = path.join(
+        builder.nuxt.options.buildDir + '/dist/server',
+        'server.mjs'
+      );
+      fs.writeFileSync(extraFilePath, 'export {};');
+    }
+  }
 })
