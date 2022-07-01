@@ -1,9 +1,14 @@
 <template>
   <div>
     <header class="title">Main App</header>
-    
-    <h2> Apps </h2>
-    {{ apps }}
+
+    <div class="menu-wrap">
+      <ul>
+        <li v-for="app in apps" :key="app.name">
+          <nuxt-link :to="app.activeRule">{{app.name}}</nuxt-link>
+        </li>
+      </ul>
+    </div>
 
     <div id="subapp"></div>
   </div>
