@@ -35,6 +35,7 @@ export default defineNuxtConfig({
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    ['@pinia/nuxt', { disableVuex: true }],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
