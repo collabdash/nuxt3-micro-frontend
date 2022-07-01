@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
+    "dev": "env-cmd nuxi dev",
     "build": "nuxi build",
     "start": "nuxi preview",
     "generate": "nuxi generate",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "core-js": "^3.19.3",
+    "env-cmd": "^10.1.0",
     "nuxt-edge": "latest",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
